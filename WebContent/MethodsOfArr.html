@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function display() {
+	let arr = new Array();
+	arr[0]="rama";
+	arr[1]="bhavani";
+	arr[2]="sony";
+	arr.sort();
+	document.write(arr);
+	let b=new Array();
+	b[0]="renuka";
+	b[1]="sandhya";
+	document.write("<br>"+b);
+	let res=arr.concat(b);
+	document.write("<br>"+res);
+	for(let x in res) {
+	document.write("<br>"+res[x]);
+	}
+	document.write("<br>"+res.length);
+
+	}
+</script>
+</head>
+<body>
+<form>
+<input type="button" onclick="display()" value="click">
+</body>
+</html>
