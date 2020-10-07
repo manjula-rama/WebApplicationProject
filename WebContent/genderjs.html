@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function display() {
+var total=document.getElementsByName("gender");
+alert("total genders= "+total.length+"male= "+total[0].checked+"female = "+total[1].checked);
+}
+
+function countpara() {
+	var totalpara=document.getElementsByTagName("p");
+	alert("total p tags agre:"+totalpara.length);
+}
+</script>
+</head>
+<body>
+<form>
+ female:<input type="radio" name="gender" value="male">
+male:<input type="radio" name="gender" value="female">
+<input type="button" onclick="display()" value="click">
+</form>
+<p>first paragraph</p>
+<p>second paragraph</p>
+<p>three paragraph</p>
+<p>four paragraph</p>
+<button onclick="countpara()" >count</button>
+</body>
+</html>

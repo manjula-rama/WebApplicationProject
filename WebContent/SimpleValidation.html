@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script >
+function validateform() {
+	let name = document.forms[0].name.value;
+	let password = document.forms[1].password.value;
+	if(name.length == 0 || name== '') {
+		document.getElementById("nameerror").innerHTML="<font color=red>name can't be blank</font>";
+		return false;
+	}
+	else if(password.length<6) {
+		document.getElementById("passworderror").innerHTML="<font color=red>password must has atleast 6 characters</font>";
+		return false;
+	}
+	
+}
+</script>
+</head>
+<body>
+<form method="post" action="ValidateServlet" onSubmit="return validateform()">
+<div>
+<label>Name:</label>
+<input type="text" name="name"><br><br>
+<span id="nameerror"></span>
+</div>
+<div>
+<label>Password:</label>
+<input type="password" name="password"><br><br>
+<span id="passworderror"></span>
+</div>
+<input type="submit" value="register">
+</body>
+</html>

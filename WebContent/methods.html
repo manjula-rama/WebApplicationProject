@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function display() {
+	let newval=document.getElementById("cname").value;
+	let a=["java","c","php"];
+	a.push(newval);
+	document.getElementById("result").innerHTML=a.join("*");
+}
+</script>
+</head>
+<body>
+<form name="myform">
+<input type="text" name="cname" id="cname">
+<input type="button" onclick="display()" value="clickhere">
+<span id="result"></span>
+</form>
+</body>
+</html>

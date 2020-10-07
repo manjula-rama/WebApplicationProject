@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function fun() {
+	let email=document.getElementById("emailid").value;
+	let dob=document.getElementById("dob").value;
+	document.getElementById("result").innerHTML=email+" "+dob;
+	}
+</script>
+</head>
+<body>
+<form name="myform">
+<input type="email" name="emailid" id="emailid" required>
+<input type="date" name="dob" id="dob" required>
+<input type="button" onclick="fun()" value="click"/>
+<span id="result"></span>
+</form>
+</body>
+</html>

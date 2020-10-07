@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function sayHello() {
+	var name=document.getElementById("username").value;
+	document.getElementById("result").innerHTML="<font color=red>"+name+"</font>";
+}
+</script>
+</head>
+<body>
+<input type="text" name="uname" id="username"/>
+<button onClick="sayHello()">click</button>
+<label id="result"></label>
+</body>
+</html>

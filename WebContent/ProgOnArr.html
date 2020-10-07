@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function displayArr() {
+	var a=new Array("rama","sony","bhavani","rajesh");
+	var res = "";
+	for(x of a) {
+		res = res + x+",";
+	}
+	document.getElementById("result").innerHTML = res;
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" onclick="displayArr()" value="clickhere">
+<span id="result"></span>
+</form>
+</body>
+</html>

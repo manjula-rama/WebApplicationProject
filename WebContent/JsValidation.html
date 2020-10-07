@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function check() {
+	var name=document.myform.txtname.value;
+	if(name==""||name.length==0) {
+		alert("textfield should not be empty");
+	}
+}
+function fun() {
+	var res=confirm("do u want continue");
+	if(res==true)
+		alert("thank u");
+}
+</script>
+</head>
+<body>
+<form name="myform">
+enter ur name:<input type="text" onblur="check()" name="txtname"/>
+<input type="button" onclick="fun()" value="click here"/>
+
+</form>
+</body>
+</html>
